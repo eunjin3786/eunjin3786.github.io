@@ -6,14 +6,24 @@
     <style>
       :root {
         color-scheme: light dark;
+        --h1-color: red;
+        --h2-color: red;
       }
       
+      @media screen and (prefers-color-scheme: dark) {
+        :root {
+          --h1-color: green;
+          --h2-color: green;
+        }
+
       h1 {
         font-size: 1000%;
+        color: var(--h1-color);
       }
       
       h2 {
         font-size: 500%;
+        color: var(--h2-color);
       }
     </style>
   </head>
